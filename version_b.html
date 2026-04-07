@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAS | Enhance Every Adventure - 專業進階之選</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #050505; color: #e2e8f0; }
+        .accent-red { color: #ff3e3e; }
+        .bg-accent-red { background-color: #ff3e3e; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        .radar-chart { border: 2px dashed #444; border-radius: 50%; width: 200px; height: 200px; position: relative; margin: 0 auto; }
+        .radar-fill { background: rgba(255, 62, 62, 0.4); clip-path: polygon(50% 10%, 90% 40%, 75% 90%, 25% 90%, 10% 40%); width: 100%; height: 100%; position: absolute; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 px-8 py-6 flex justify-between items-center bg-black/80 backdrop-blur-lg border-b border-white/10">
+        <div class="text-3xl font-black tracking-tighter italic">TAS</div>
+        <div class="space-x-10 hidden md:flex text-sm font-medium tracking-widest uppercase">
+            <a href="#why" class="hover:text-red-500 transition">為什麼是 TAS</a>
+            <a href="#category" class="hover:text-red-500 transition">產品類別</a>
+            <a href="#campaign" class="hover:text-red-500 transition">最新活動</a>
+            <a href="#lab" class="hover:text-red-500 transition">教練實測</a>
+        </div>
+        <button class="bg-accent-red px-6 py-2 rounded-sm text-sm font-bold uppercase hover:bg-red-600 transition">Join Team</button>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1482867996988-29ec3aee816d?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Adventure Background">
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h2 class="text-sm font-bold tracking-[0.5em] mb-4 text-red-500 uppercase">Brand Film 2026</h2>
+            <h1 class="text-6xl md:text-9xl font-black italic mb-8">ENHANCE EVERY<br>ADVENTURE.</h1>
+            <p class="text-xl max-w-xl mx-auto text-slate-400 font-light">讓每一次冒險都更極致。為專業而生，為進階而戰。</p>
+            <div class="mt-12 flex justify-center gap-6">
+                <button class="bg-white text-black px-10 py-4 font-black text-sm uppercase">立即探索</button>
+                <button class="border border-white px-10 py-4 font-black text-sm uppercase hover:bg-white/10">觀看影片</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="why" class="py-32 bg-zinc-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-black italic mb-4">為什麼 TAS 是你的進階選擇？</h2>
+                <p class="text-red-500 font-bold">Perfect Fit x Professional x Protect</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="glass-card p-10 hover:border-red-500 transition duration-500">
+                    <div class="text-4xl mb-6 text-red-500"><i class="fa-solid fa-users"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">專為台灣人設計</h3>
+                    <p class="text-slate-400 leading-relaxed">針對亞洲人臉型與體感進行深度開發，確保長久配戴的極致舒適與完美契合。</p>
+                </div>
+                <div class="glass-card p-10 hover:border-red-500 transition duration-500">
+                    <div class="text-4xl mb-6 text-red-500"><i class="fa-solid fa-person-skiing"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">教練推薦 x 量身打造</h3>
+                    <p class="text-slate-400 leading-relaxed">與多位頂尖教練協作設計，滿足高強度運動場景下的所有專業需求。</p>
+                </div>
+                <div class="glass-card p-10 hover:border-red-500 transition duration-500">
+                    <div class="text-4xl mb-6 text-red-500"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">獨家品牌保固/升級</h3>
+                    <p class="text-slate-400 leading-relaxed">領先業界的售後保障計畫，支持你的裝備隨著技術同步進化。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-accent-red py-6">
+        <p class="text-center text-xl font-black italic tracking-widest text-black">TAS, 讓專業為冒險加分</p>
+    </div>
+
+    <section id="category" class="py-32 container mx-auto px-6">
+        <h2 class="text-sm font-bold tracking-widest text-red-500 mb-4 uppercase">Choose your adventure</h2>
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="relative group overflow-hidden flex-grow h-[500px]">
+                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700" alt="SKI">
+                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition"></div>
+                <div class="absolute bottom-10 left-10">
+                    <h3 class="text-5xl font-black italic">SKI</h3>
+                    <button class="mt-4 opacity-0 group-hover:opacity-100 transition text-sm font-bold underline">查看系列產品</button>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden w-full md:w-1/3 h-[500px] bg-zinc-800 flex items-center justify-center">
+                <p class="text-zinc-600 font-bold italic text-2xl">...未來新增分類</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lab" class="py-32 bg-white text-black">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <div class="bg-zinc-100 p-8 rounded-lg shadow-xl relative overflow-hidden border-2 border-red-500">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 text-xs font-bold">#WILD BULL 實測</div>
+                        <h4 class="text-2xl font-black mb-6">教練實測評測報告</h4>
+                        <div class="radar-chart mb-6">
+                            <div class="radar-fill"></div>
+                            <div class="absolute top-0 left-1/2 -translate-x-1/2 -mt-6 text-[10px] font-bold">訓練強度</div>
+                            <div class="absolute top-1/2 right-0 -mr-8 -translate-y-1/2 text-[10px] font-bold">穿脫速度</div>
+                            <div class="absolute bottom-0 right-1/4 text-[10px] font-bold">攜帶性</div>
+                            <div class="absolute bottom-0 left-1/4 text-[10px] font-bold">輕便性</div>
+                            <div class="absolute top-1/2 left-0 -ml-8 -translate-y-1/2 text-[10px] font-bold">支撐性</div>
+                        </div>
+                        <div class="text-center">
+                            <p class="font-bold text-lg mb-2">輕便、好穿脫！</p>
+                            <p class="text-sm text-zinc-600">適合開發大面積支撐背部使用者而設計！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-5xl font-black italic mb-6">教練協作<span class="text-red-500">PLAN</span></h2>
+                    <p class="text-lg text-zinc-700 mb-8 leading-relaxed">TAS 與專業教練深度聯手，每一件產品在上市前都經過至少 100 小時的極端環境實測。我們不只賣產品，我們提供經過實戰證明的解決方案。</p>
+                    <button class="bg-black text-white px-8 py-4 font-bold text-sm">查看完整實測報告</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black italic mb-16">冒險隊友 TEAMMATE 分享</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-12 text-left italic">
+                <p class="text-xl mb-6">"在極高海拔的強光下，TAS 的視野清晰度讓我非常驚艷，這是目前為止最契合我的裝備。"</p>
+                <p class="text-red-500 font-bold not-italic">— Alex, 職業滑雪愛好者</p>
+            </div>
+            <div class="glass-card p-12 text-left italic">
+                <p class="text-xl mb-6">"售後升級計畫真的太有感了，隨著我的技術進步，我的裝備也能跟著進化。"</p>
+                <p class="text-red-500 font-bold not-italic">— Sarah, 登山冒險家</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-950 pt-32 pb-10 border-t border-white/10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black mb-4 italic">TAS ADVENTURE TEAM</h2>
+            <p class="text-zinc-500 mb-12">讓每一次冒險都更極致</p>
+            <div class="flex flex-col md:flex-row justify-center gap-12 mb-24">
+                <div>
+                    <h4 class="font-bold mb-4">體驗據點</h4>
+                    <p class="text-zinc-400">台北 / 台中 / 高野山旗艦店</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">加入我們</h4>
+                    <p class="text-zinc-400">hello@tas-adventure.com</p>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-xs text-zinc-600 uppercase tracking-widest">© 2026 TAS THE ADVANCED STANDARD.</p>
+                <div class="flex gap-6">
+                    <i class="fa-brands fa-instagram text-zinc-600 hover:text-white cursor-pointer transition"></i>
+                    <i class="fa-brands fa-youtube text-zinc-600 hover:text-white cursor-pointer transition"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</body>
+</html>
